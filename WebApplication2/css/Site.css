@@ -1,0 +1,78 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.ps4-item {
+    margin-bottom: 20px;
+}
+
+.ps4-images {
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.ps4-title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ps4-price {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ps4-quantity {
+    text-align: center;
+}
+
+.product {
+    margin-bottom: 50px;
+}
+
+.product-name {
+    margin-bottom: 20px;
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-quantity {
+    margin-bottom: 20px;
+}
+
+.product-price {
+    margin-bottom: 20px;
+}
+
+.btnSend {
+    margin-left: 25%;
+}
+
+.btnBuy {
+    margin-top: 10px;
+    margin-left: 44%;
+}
+
+#map {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 1200px;
+}
+
+.footer {
+    text-align: center;
+}
