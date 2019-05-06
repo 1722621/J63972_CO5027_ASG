@@ -8,8 +8,13 @@ h1 {
     text-align: center;
 }
 
-h2 {
+.topic {
     text-align: center;
+    margin-bottom: 10px;
+}
+
+#userLogin {
+    margin-top: 15px;
 }
 
 .ps4-item {
@@ -63,6 +68,25 @@ h2 {
 .btnBuy {
     margin-top: 10px;
     margin-left: 44%;
+}
+
+.upload-image {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.upload-file {
+    margin-left: 43%;
+}
+
+.btnUpload {
+    margin-left: 43%;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #map {

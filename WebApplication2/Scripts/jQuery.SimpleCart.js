@@ -61,7 +61,7 @@
                                             </div>\n\
                                             <div class='cart-checkout'>\n\
                                             <form action='#'>\n\
-                                                <button class='btn btn-primary' OnClick='btnCheckOut_Click' runat='server'>Proceed To Checkout</button>\n\
+                                                <asp:button class='btn btn-primary' onclick='btnCheckOut_Click'>Proceed To Checkout</button>\n\
                                             </form>\n\
                                         </div>\n\
                                  </div>");

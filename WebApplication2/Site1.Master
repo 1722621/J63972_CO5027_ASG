@@ -31,6 +31,18 @@
                 showcartID: '#show-cart',
                 itemCountClass: '.item-count'
             });
+            
+            //$("#btnCheckOut").on("click", function () {
+            //    var itemList = [];
+                
+            //    $(".cart-each-product").each(function () {
+            //        var name = $(this).next.find('.name');
+            //        var quantity = $(this).next.find('.quantityContainer');
+            //        var price = $(this).next.find('.quantity-am');
+
+            //        var combinedString
+            //    });
+            //});
         });
     </script>
 
@@ -52,6 +64,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="~/Register.aspx" id="signUp" runat="server">SignUp</a></li>
                     <li><a href="~/Login.aspx" id="logIn" runat="server">LogIn</a></li>
+                    <li id="userLogin" runat="server">Welcome, <asp:LoginName ID="LoginName1" runat="server" /></li>
                     <li><a href="~/LogOut.aspx" id="logOut" runat="server">LogOut</a></li>
                 </ul>
                 <div class="navbar-form navbar-right" role="search">
@@ -69,7 +82,7 @@
     </asp:ContentPlaceHolder>
 
     <div class="col-xs-12 col-sm-12 col-md-12 footer">
-        <p>&copy;Student No:1722621 Assesment No:363972 Student ID No:LCB/4147 </p>
+        <p>&copy;Student No:1722621 Assesment No:363972 Student ID No:LCB/4147</p>
 
         <p><a href="Admin/Default.aspx">Admin</a></p>
     </div>

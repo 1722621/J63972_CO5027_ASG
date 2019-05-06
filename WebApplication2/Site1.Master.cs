@@ -17,12 +17,14 @@ namespace WebApplication2
             {
                 signUp.Visible = false;
                 logIn.Visible = false;
+                userLogin.Visible = true;
                 logOut.Visible = true;
             }
             else
             {
                 signUp.Visible = true;
                 logIn.Visible = true;
+                userLogin.Visible = false;
                 logOut.Visible = false;
             }
         }

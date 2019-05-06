@@ -62,6 +62,10 @@
                         <asp:RequiredFieldValidator ID="rfvEditQuantity" ValidationGroup="Edit" runat="server"
                             ErrorMessage="Please enter the product's quantity" ControlToValidate="txtQuantity" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="rvEditQuantity" runat="server" ValidationGroup="Edit"
+                            ErrorMessage="The quantity must be greater than or equal to zero" ControlToValidate="txtQuantity"
+                            Text="*" ForeColor="Red" Type="Integer" MinimumValue="0" MaximumValue="1000">
+                        </asp:RangeValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
                         <asp:Label ID="Label3" runat="server" Text='<%# Bind("Quantity") %>'></asp:Label>
@@ -71,6 +75,10 @@
                         <asp:RequiredFieldValidator ID="rfvInsertQuantity" ValidationGroup="Insert" runat="server"
                             ErrorMessage="Please enter the product's quantity" ControlToValidate="insertQuantity" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="rvInsertQuantity" runat="server" ValidationGroup="Insert"
+                            ErrorMessage="The quantity must be greater than or equal to zero" ControlToValidate="insertQuantity"
+                            Text="*" ForeColor="Red" Type="Integer" MinimumValue="0" MaximumValue="1000">
+                        </asp:RangeValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Price" SortExpression="Price">
@@ -79,6 +87,10 @@
                         <asp:RequiredFieldValidator ID="rfvEditPrice" ValidationGroup="Edit" runat="server"
                             ErrorMessage="Please enter the product's price" ControlToValidate="txtPrice" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="rvEditPrice" runat="server" ValidationGroup="Edit"
+                            ErrorMessage="The price must be greater than or equal to zero and cannot include the currency symbol as well as cents" ControlToValidate="txtPrice"
+                            Text="*" ForeColor="Red" Type="Integer" MinimumValue="0" MaximumValue="1000">
+                        </asp:RangeValidator>
                     </EditItemTemplate>
                     <ItemTemplate>
                         <asp:Label ID="Label4" runat="server" Text='<%# Bind("Price") %>'></asp:Label>
@@ -88,6 +100,10 @@
                         <asp:RequiredFieldValidator ID="rfvInsertPrice" ValidationGroup="Insert" runat="server"
                             ErrorMessage="Please enter the product's price" ControlToValidate="insertPrice" Text="*" ForeColor="Red">
                         </asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="rvInsertPrice" runat="server" ValidationGroup="Insert"
+                            ErrorMessage="The price must be greater than or equal to zero and cannot include the currency symbol as well as cents" ControlToValidate="insertPrice"
+                            Text="*" ForeColor="Red" Type="Integer" MinimumValue="0" MaximumValue="1000">
+                        </asp:RangeValidator>
                     </FooterTemplate>
                 </asp:TemplateField>
                 <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="UploadImage.aspx?id={0}" InsertVisible="False" Text="Set Image" />

@@ -6,7 +6,9 @@
     PS4 GAMES
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Contact Us</h2>
+    <div class="topic">
+        <h2>Contact Us</h2>
+    </div>
     <form class="form-horizontal" action=" " method="post" id="validation_form" runat="server">
         <fieldset>
             <div class="form-group has-feedback">
